@@ -1,0 +1,73 @@
+<!<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="wrapper">
+
+          <div class="box a"><p class="text">A</p></div>
+          <div class="box b"><p class="text">B</p></div>
+          <div class="box c"><p class="text">C</p></div>
+
+          <div class="box d"><p class="text">D</p></div>
+          <div class="box e"><p class="text">E</p></div>
+          <div class="box e"><p class="text">E</p></div>
+
+  </div>
+
+  </body>
+</html>
+
+
+<style type="text/css">
+
+  .wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 100% 300px;
+}
+
+.box {
+  height: 100%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.text {bottom: 0;
+  color: white;
+  font-family: Helvetica;
+  font-size: 300%;
+  height: 40%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;}
+
+.a {
+    background-image:url(https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif);
+    background-size: cover;
+}
+
+.b {
+  background-color: #e91e63;
+}
+
+.c {
+  background-color: #673ab7;
+}
+
+.d {
+  background-color: #01579b;
+}
+
+.e {
+  background-color: #82b1ff;
+}
+</style>
