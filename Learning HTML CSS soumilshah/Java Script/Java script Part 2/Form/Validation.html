@@ -65,28 +65,35 @@
   var password = document.querySelector('#exampleInputPassword1');
   var button  = document.querySelector(".btn btn-primary")
 
-  email.addEventListener('mouseover', function(){
-    email.style.color="red";
-    email.style.border = "solid 2px red";
-  });
-
-  email.addEventListener('mouseout', function(){
-    email.style.color="green";
-    email.style.border = "solid 2px green";
-  });
 
   function validator_handler()
 
-  {
-    if (password.value.trim() == "")
-        {
-          alert('msg');
-          password.style.border="3px solid red";
-          return false;
-        }
-    else {
-      return true;
-    }
+    {
+              if (password.value.trim() == "")
+                        {
+                          alert('No Blank Spaces Allowed ');
+                          password.style.border="3px solid red";
+                          return false;
+                        }
+
+                if (password.value.length <= 6)
+                        {
+                          alert('Password has to be 6 Digit Long ');
+                          password.style.border="3px solid red";
+                          return false;
+                        }
+
+                  if (email.value.length <= 6)
+                        {
+                          alert('Email is to Short ');
+                          email.style.border="3px solid red";
+                          return false;
+                        }
+
+            else
+            {
+              return true;
+            }
   }
 
 </script>
